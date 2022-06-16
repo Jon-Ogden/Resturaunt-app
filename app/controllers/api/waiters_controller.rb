@@ -2,7 +2,7 @@ class Api::WaitersController < ApplicationController
     before_action :set_waiter, only: [:show, :update, :destroy]
 
     def index
-        render json: Waiter.all
+        render json: Waiter.all.order(:created_at)
     end
     def show
         render json: @waiter

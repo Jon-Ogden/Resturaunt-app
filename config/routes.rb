@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     resources :waiters do
       resources :tables
     end
+    get '/tables', to:'tables#all_tables'
   end
+
 end

@@ -1,0 +1,24 @@
+.link{
+    padding:5px
+}
+.navbar{
+    background-color: lightcyan;
+    width: fit-content;
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.intro{
+    margin: 5px;
+}
+.intro p{
+    font-family: fantasy;
+}
+.card{
+    background-color: lightcyan;
+    width: fit-content;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin:10px;
+}

@@ -3,7 +3,7 @@ class Api::TablesController < ApplicationController
         before_action :set_table, only: [:show, :destroy, :update]
     
         def all_tables
-            render json: Table.all
+            render json: Table.all.order(:created_at)
         end
     
         def index
@@ -43,7 +43,7 @@ class Api::TablesController < ApplicationController
             @table = @waiter.tables.find(params[:id])
         end
         def table_params
-            params.require(:table).permit(:name, :genre)
+            params.require(:table).permit(:seats, :waiter_id)
         end
     
 end
